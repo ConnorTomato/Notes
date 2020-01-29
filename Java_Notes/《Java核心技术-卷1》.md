@@ -144,5 +144,49 @@ a.**局部变量**：在方法、构造方法或者语句块中定义的变量�
     		boss = (Manager)staff[1];
     
     	}
-   ```
+**抽象类**
+
+——体现继承关系，父类与派生类之间必须存在“is-a”关系，即父类与派生类之间在概念本质应相同（自下而上的过程）设计抽象类是自下而上的过程,因为调用者子类需要某些属性和特有行为,所以调用者继承抽象类 
+
+- 目的：开发者继承抽象类是为了使用抽象类的属性和行为
+
+  为了提高程序的清晰度，包含一个或多个抽象方法的类本身必须被声明为抽象的
+
+- 扩展抽象类有两种选择：
+
+  1.在抽象类中定义部分抽象类方法或不定义抽象类方法，这样就必须将子类也标记为抽象类。
+
+  2.定义全部的抽象方法，如此子类就不是抽象的了
+
+抽象类不能被实例化。一个声明为abstract，就不能创建这个类的对象。
+
+`下面定义一个扩展抽象类Person的具体子类Student：`
+
+```
+public class Student extends Person
+
+{	
+
+​	private String major;
+
+​	public Student(String name,String major){
+
+​			super(name);
+
+​			this.major = major;
+
+​	}
+
+​	public String getDescription(){
+
+​		return"a student majoring in" + major;	
+
+​	}
+
+}
+
+
+```
+
+
 
