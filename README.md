@@ -6,4 +6,4 @@
 
 ## ✏️ 算法
 
--[算法图集原码+介绍](/[Algorithm Notes](https://github.com/ConnorTomato/Notes/tree/master/Algorithm Notes)/**《算法图解》**)
+[算法图集原码+介绍](/Algorithm Notes/《算法图解》)
